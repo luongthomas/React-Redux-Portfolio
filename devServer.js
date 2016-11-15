@@ -17,7 +17,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-let port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, 'localhost', (err) => {
   if (err) {
@@ -25,5 +25,5 @@ app.listen(port, 'localhost', (err) => {
     return;
   }
 
-  console.log('Listening at http://localhost:' + port);
+  console.log('Listening at http://localhost:${port}');
 });
