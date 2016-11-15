@@ -61,6 +61,7 @@
     "react-perf": "^1.0.1",
     "react-redux": "^4.1.1",
     "redux-thunk": "^1.0.3",
+    "rimraf": "^2.5.4",
     "url-loader": "^0.5.7"
   }
 }
