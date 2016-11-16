@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
-const config = require('./webpack.config.dev');
+const config = require('./webpack.config.prod');
 
 const app = express();
 const compiler = webpack(config);
@@ -25,5 +25,5 @@ app.listen(port, 'localhost', (err) => {
     return;
   }
 
-  console.log('Development Server Listening at http://localhost:' + port);
+  console.log('Production Server Listening at http://localhost:' + port);
 });
