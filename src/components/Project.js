@@ -37,10 +37,12 @@ export default class Project extends Component {
             { <img src={project.desktop_image}/> }
           </div> }
           <ul className="project-links">
+            {project.project_url ?
             <a href={project.project_url} target="_blank">
               <li>View project
               <i className="fa fa-external-link-square"></i></li>
             </a>
+            : null}
             {project.github_url ? 
               <a href={project.github_url} target="_blank">
                 <li>Github
