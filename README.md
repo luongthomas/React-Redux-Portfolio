@@ -1,2 +1,10 @@
-# react-portfolio2
-https://github.com/react-portfolio/react-portfolio
+# React-Redux-Portfolio
+
+
+To get this to run,
+
+Please clone the repository,
+cd React-Redux-Portfolio
+npm install && npm start
+
+Open your browser to localhost:7070
