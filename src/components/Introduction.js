@@ -20,6 +20,7 @@ export default class Introduction extends Component {
           <div className="introduction__icons">
             <a href={personalInfo.github}><i className="fa fa-github icon"></i></a>
             <a href={personalInfo.linkedIn}><i className="fa fa-linkedin-square icon"></i></a>
+            <a href={personalInfo.resume}><i className="fa icon fa-file-pdf-o"></i></a>
           </div>
         </div>
       </div>
