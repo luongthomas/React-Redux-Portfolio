@@ -56,6 +56,9 @@
   "dependencies": {
     "cross-env": "^1.0.8",
     "file-loader": "^0.8.5",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
     "immutability-helper": "^2.0.0",
     "node-bourbon": "^4.2.3",
     "react": "^15.3.2",
