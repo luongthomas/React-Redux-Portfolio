@@ -1,4 +1,4 @@
-# react-portfolio2
+# React-Redux-Portfolio
 
 
 To get this to run,
