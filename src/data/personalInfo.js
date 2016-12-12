@@ -4,7 +4,7 @@ const personalInfoData = {
   github: 'https://github.com/luongthomas',
   angelList: 'https://angel.co/jay-chen-5',
   email: 'mailto:luongt@oregonstate.edu',
-  resume: 'https://a.pomf.cat/bcjkrs.pdf'
+  resume: 'https://a.pomf.cat/gfcaqb.pdf'
 };
 
 export { personalInfoData };
