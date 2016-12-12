@@ -5,6 +5,7 @@ Using express, it will serve the HTML + JS bundle without the redux debugger
 Also uses hot reloading.
 
 */
+/*
 var fs = require('fs');
 var http = require('http');
 var https = require('https');
@@ -13,6 +14,7 @@ var certificate = fs.readFileSync('/etc/pki/tls/certs/luongthomas_me.crt', 'utf8
 
 var credentials = {key: privateKey, cert: certificate};
 // end ssl custom config
+*/
 
 const path = require('path');
 const express = require('express');
@@ -34,7 +36,7 @@ app.get('*', (req, res) => {
 });
 
 const port = process.env.PORT || 7070;
-/*
+
 app.listen(port, (err) => {
   if (err) {
     console.log(err);
@@ -44,10 +46,10 @@ app.listen(port, (err) => {
   console.log('Production Server Listening at http://localhost:' + port);
 });
 
-*/
 
 
-// your express configuration here
+/*
+// tried aws https
 
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
@@ -55,3 +57,4 @@ var httpsServer = https.createServer(credentials, app);
 httpServer.listen(8080);
 httpsServer.listen(8443);
 console.log('Production Server Listening at http://localhost:' + 8443);
+*/
