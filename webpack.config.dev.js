@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const bourbon = require('node-bourbon').includePaths;
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'cheap-module-eval-source-map',  // Console logs use filename + line# rather than bundle.js line#s
   entry: [
     'eventsource-polyfill', // necessary for hot reloading with IE
     'webpack-hot-middleware/client',

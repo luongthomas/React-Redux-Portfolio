@@ -12,7 +12,7 @@ export default class Introduction extends Component {
             THOMAS LUONG
           </h2>
           <div className="introduction__tagline">
-            Front-End Developer
+            Computer Science Graduate 2016
           </div>
           <div className="introduction__location">
             Portland, Oregon

@@ -13,11 +13,12 @@ import './styles/main.scss';
 import { configureStore } from './store/configureStore';
 import { Root } from './containers/Root';
 
-// Benchmark: Start keeping track of time
+// Benchmark: Start keeping track of time for how long it takes to load
 export const startTime = new Date().getTime();
 
 const store = configureStore();
 
+// Choose our Redux store
 ReactDOM.render(
   <Root store={store}/>,
   document.getElementById('root')

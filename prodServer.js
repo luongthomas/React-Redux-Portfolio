@@ -1,3 +1,12 @@
+/*
+
+This is the production server code
+Using express, it will serve the HTML + JS bundle without the redux debugger
+Also uses hot reloading.
+
+*/
+
+
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
@@ -17,7 +26,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-const port = process.env.PORT || 7070;
+const port = process.env.PORT || 80;
 
 app.listen(port, (err) => {
   if (err) {

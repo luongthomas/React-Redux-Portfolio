@@ -10,7 +10,7 @@ import Sun from '../components/Sun';
 import ProjectsContainer from './ProjectsContainer';
 import { startTime } from '../index';
 import '../styles/parallax.scss';
-import '../styles/main.scss';
+// import '../styles/main.scss';
 
 /**
  * It is common practice to have a 'Root' container/component require our main App (this one).
@@ -25,6 +25,8 @@ export class App extends Component {
 
   render() {
     const { projects, benchmark, personalInfo } = this.props;
+
+    // Creates a project space for each project in the projects array
     const projectEntries = projects.map((project, index) => {
       return <Project key={index} project={project} />;
     });
@@ -45,6 +47,18 @@ export class App extends Component {
         </div>
         <div className="parallax-group">
           <ProjectsContainer />
+        </div>
+
+        <div className="parallax-group">
+          <div className="parallax-layer parallax__layer--base">
+            <Introduction personalInfo={personalInfo} />
+          </div>
+          <div className="parallax-layer parallax__layer--back-1">
+            <Sun />
+          </div>
+          <div className="parallax-layer parallax__layer--back-2">
+            <Hills />
+          </div>
         </div>
       </div>
     );

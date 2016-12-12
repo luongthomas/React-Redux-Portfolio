@@ -18,7 +18,7 @@ export default class Project extends Component {
       <div className="project-container" style={{background: project.background_color}}>
         <div className="desktop-screenshot-container">
           { project.gfycat ?
-            <video className="gfyVid" controls>
+            <video className="gfyVid" autoplay="autoplay" controls loop >
               <source src={`https://fat.gfycat.com/${project.gfycat}.mp4`} type="video/mp4" />
               <source src={`https://fat.gfycat.com/${project.gfycat}.webm`} type="video/webm" />
               Your browser does not support the video tag.
