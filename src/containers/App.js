@@ -11,7 +11,7 @@ import ProjectsContainer from './ProjectsContainer';
 import { startTime } from '../index';
 import '../styles/parallax.scss';
 // import '../styles/main.scss';
-
+import '../styles/introduction.scss';
 /**
  * It is common practice to have a 'Root' container/component require our main App (this one).
  * Again, this is because it serves to wrap the rest of our application with the Provider
@@ -51,7 +51,18 @@ export class App extends Component {
 
         <div className="parallax-group">
           <div className="parallax-layer parallax__layer--base">
-            <Introduction personalInfo={personalInfo} />
+            <div>
+              <div className="introduction">
+                <div className="introduction__content">
+                  <h2 className="introduction__name">
+                    {'Please come back later for more content. '}
+                  </h2>
+                  <div className="introduction__tagline">
+                    {'The site will expand as my knowledge of React grows!'}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="parallax-layer parallax__layer--back-1">
             <Sun />
@@ -64,6 +75,9 @@ export class App extends Component {
     );
   }
 }
+
+
+
 
 App.propTypes = {
   projects: PropTypes.array.isRequired,

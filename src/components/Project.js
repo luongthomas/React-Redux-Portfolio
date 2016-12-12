@@ -49,6 +49,9 @@ export default class Project extends Component {
             : null }
           </ul>
           <div className="project-details">
+            {project.background}
+            <br />
+            <br />
             {project.role}
           </div>
         </div>

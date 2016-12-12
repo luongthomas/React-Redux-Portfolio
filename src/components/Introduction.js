@@ -9,7 +9,7 @@ export default class Introduction extends Component {
       <div className="introduction">
         <div className="introduction__content">
           <h2 className="introduction__name">
-            THOMAS LUONG
+            {personalInfo.name}
           </h2>
           <div className="introduction__tagline">
             Computer Science Graduate 2016
