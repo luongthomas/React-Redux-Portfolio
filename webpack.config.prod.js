@@ -40,6 +40,10 @@ module.exports = {
   module: {
     loaders: [
       {
+          test: /\.(eot|svg|ttf|woff|woff2)$/,
+          loader: 'file?name=public/fonts/[name].[ext]'
+      },
+      {
         test: /\.js$/,
         loaders: ['babel'],
         include: path.join(__dirname, 'src')

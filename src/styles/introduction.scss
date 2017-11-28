@@ -1,14 +1,17 @@
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600);
+// @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+// @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600);
 
 .introduction {
-  margin-top: 40vh;
+  margin-top: 30vh;
   width: 100vw;
   font-size: 2em;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
+  padding-right: 30%;
+  padding-left: 10%;
+  letter-spacing: 1px;
 }
 
 .deco-layer--4 {
@@ -56,17 +59,45 @@
 .introduction__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.introduction__name {
-  text-align: center;
-  font-size: 1.5em;
-  font-family: "Montserrat",sans;
+.introduction__greeting {
+  text-align: left;
+  font-size: 2em;
+  font-family: "Montserrat-SemiBold", sans;
   color: white;
+  margin-bottom: .5em;
 }
+
+
+.introduction__subgreeting {
+  text-align: left;
+  font-size: 1em;
+  font-family: "Montserrat-SemiBold", sans;
+  color: white;
+  margin-bottom: 2em;
+}
+
+.introduction__miniIntro {
+  text-align: left;
+  font-size: 1em;
+  font-family: "Montserrat-Light", sans;
+  color: white;
+  margin-bottom: 2em;
+}
+
+
+.introduction__tagline {
+  text-align: left;
+  font-size: 1em;
+  font-family: "Montserrat-Light", sans;
+  color: white;
+  margin-bottom: 2em;
+}
+
 
 .introduction__icons i:hover {
   color: red;

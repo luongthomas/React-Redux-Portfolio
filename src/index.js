@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
  */
 import './styles/main.scss';
 
+
 /**
  * Both configureStore and Root are required conditionally.
  * See configureStore.js and Root.js for more details.

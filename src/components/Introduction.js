@@ -8,14 +8,17 @@ export default class Introduction extends Component {
     return (
       <div className="introduction">
         <div className="introduction__content">
-          <h2 className="introduction__name">
-            {personalInfo.name}
+          <h2 className="introduction__greeting">
+            {personalInfo.greeting}
+          </h2>
+          <h2 className="introduction__subgreeting">
+            {personalInfo.subGreeting}
+          </h2>
+          <h2 className="introduction__miniIntro">
+            {personalInfo.miniIntro}
           </h2>
           <div className="introduction__tagline">
-            Computer Science Graduate 2016
-          </div>
-          <div className="introduction__location">
-            Portland, Oregon
+            Currently: Developer at UST Global
           </div>
           <div className="introduction__icons">
             <a href={personalInfo.github}><i className="fa fa-github icon"></i></a>
