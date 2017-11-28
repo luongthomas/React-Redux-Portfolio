@@ -9,7 +9,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
-  padding-right: 30%;
+  padding-right: 25%;
   padding-left: 10%;
   letter-spacing: 1px;
 }
@@ -151,19 +151,6 @@
     // font-size: 21px;
     // text-align: center;
 
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-}
-
-// Moving font
-.fadeInSlow {
-    // margin-top: 25px;
-    // font-size: 21px;
-    // text-align: center;
-
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -172,7 +159,7 @@
 }
 
 // Moving font
-.fadeInSlower {
+.fadeInSlow {
     // margin-top: 25px;
     // font-size: 21px;
     // text-align: center;
@@ -182,6 +169,19 @@
         -ms-animation: fadein 4s; /* Internet Explorer */
          -o-animation: fadein 4s; /* Opera < 12.1 */
             animation: fadein 4s;
+}
+
+// Moving font
+.fadeInSlower {
+    // margin-top: 25px;
+    // font-size: 21px;
+    // text-align: center;
+
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
 }
 @keyframes fadein {
     from { opacity: 0; }
