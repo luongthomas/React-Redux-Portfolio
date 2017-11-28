@@ -17,8 +17,9 @@ export default class Introduction extends Component {
           <h2 className="introduction__miniIntro fadeInSlow">
             {personalInfo.miniIntro}
           </h2>
+          
           <div className="introduction__tagline fadeInSlower">
-            Currently: Developer at UST Global
+            <b>Currently:</b> Python Automation Engineer at UST Global
           </div>
           <div className="introduction__icons">
             <a href={personalInfo.github}><i className="fa fa-github icon"></i></a>
