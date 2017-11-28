@@ -34,3 +34,11 @@
   height: 50vh;
   transform-style: preserve-3d;
 }
+
+.parallax__shortGroup {
+  position: relative;
+  height: 80vh;
+  padding-top: -5vh;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}

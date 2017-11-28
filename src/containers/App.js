@@ -49,7 +49,7 @@ export class App extends Component {
           <ProjectsContainer />
         </div>
 
-        <div className="parallax-group">
+        <div className="parallax__shortGroup">
           <div className="parallax-layer parallax__layer--base">
             <div>
               <div className="introduction">
