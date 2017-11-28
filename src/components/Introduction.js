@@ -8,16 +8,16 @@ export default class Introduction extends Component {
     return (
       <div className="introduction">
         <div className="introduction__content">
-          <h2 className="introduction__greeting">
+          <h2 className="introduction__greeting fadeInQuick">
             {personalInfo.greeting}
           </h2>
-          <h2 className="introduction__subgreeting">
+          <h2 className="introduction__subgreeting fadeInQuick">
             {personalInfo.subGreeting}
           </h2>
-          <h2 className="introduction__miniIntro">
+          <h2 className="introduction__miniIntro fadeInSlow">
             {personalInfo.miniIntro}
           </h2>
-          <div className="introduction__tagline">
+          <div className="introduction__tagline fadeInSlower">
             Currently: Developer at UST Global
           </div>
           <div className="introduction__icons">
