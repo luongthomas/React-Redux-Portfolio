@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
+import '../styles/ProjectList.scss';
 
 export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <span id="footer-text-wrap test">
-        	This site is an improved version of jchen85\'s repo <a href="https://github.com/jchen85/react-portfolio/tree/jaychen">here!</a>
-        </span>
+      	<div className="upper-container">
+	        <div>
+	        	Thanks for stopping by.
+	        </div>
+	        <div>
+	        	I'm glad you came.
+	        </div>
+	    </div>
       </footer>
     );
   }

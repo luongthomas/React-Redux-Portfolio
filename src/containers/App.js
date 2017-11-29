@@ -8,6 +8,7 @@ import Introduction from '../components/Introduction';
 import Hills from '../components/Hills';
 import Sun from '../components/Sun';
 import ProjectsContainer from './ProjectsContainer';
+import ProjectListContainer from './ProjectListContainer';
 import { startTime } from '../index';
 import '../styles/parallax.scss';
 // import '../styles/main.scss';
@@ -24,13 +25,13 @@ export class App extends Component {
   }
 
   render() {
-    const { projects, benchmark, personalInfo } = this.props;
+    const { projects, benchmark, personalInfo, projectLinks } = this.props;
 
     // Creates a project space for each project in the projects array
     const projectEntries = projects.map((project, index) => {
       return <Project key={index} project={project} />;
     });
-    // we can use ES6's object destructuring to effectively 'unpack' our props
+    // we can use ES6s object destructuring to effectively "unpack" our props
         // <Header personalInfo={personalInfo} />
     return (
       <div className="main-app-container parallax">
@@ -45,9 +46,12 @@ export class App extends Component {
             <Hills />
           </div>
         </div>
-        <div className="">
-          <ProjectsContainer />
+        <div>
+          <ProjectListContainer />
         </div>
+      {/*  <div className="">
+          <ProjectsContainer />
+        </div>*/}
 
         <div className="main-app-container parallax">
           <div className="parallax__shortGroup">
@@ -73,6 +77,8 @@ export class App extends Component {
             </div>
           </div>
         </div>
+
+        <Footer />
       </div>
     );
   }
@@ -85,7 +91,8 @@ App.propTypes = {
   projects: PropTypes.array.isRequired,
   actions: PropTypes.object.isRequired,
   benchmark: PropTypes.number.isRequired,
-  personalInfo: PropTypes.object.isRequired
+  personalInfo: PropTypes.object.isRequired,
+  projectLinks: PropTypes.array.isRequired
 };
 
 /**
@@ -97,7 +104,8 @@ function mapStateToProps(state) {
   return {
     projects: state.projects,
     benchmark: state.benchmark,
-    personalInfo: state.personalInfo
+    personalInfo: state.personalInfo,
+    projectLinks: state.projectLinks
   };
 }
 

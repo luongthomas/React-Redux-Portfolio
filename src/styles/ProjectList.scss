@@ -1,0 +1,28 @@
+
+
+// This will place the element over the parallax elements
+// transform: translateZ(0);
+
+.upper-container {
+  transform: translateZ(0);
+  padding-top: 5em;
+  padding-bottom: 5em;
+  text-align: center;
+  width: 100vw;
+  background-color: white;
+  // height: auto;
+  // padding: 100px 25px 100px 25px;
+  // margin-bottom: 4vh;
+  // font-size: 200%;
+  // @media #{$desktop} { 
+  //   display: flex;
+  //   align-items: center;
+  //   font-size: 150%;
+  //   line-height: 1.5;
+}
+
+
+.inner-container {
+  margin-left: 8%;
+
+}
