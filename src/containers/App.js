@@ -45,30 +45,32 @@ export class App extends Component {
             <Hills />
           </div>
         </div>
-        <div className="parallax-group">
+        <div className="">
           <ProjectsContainer />
         </div>
 
-        <div className="parallax__shortGroup">
-          <div className="parallax-layer parallax__layer--base">
-            <div>
-              <div className="introduction">
-                <div className="introduction__content">
-                  <h2 className="introduction__name">
-                    {'Please come back later for more content. '}
-                  </h2>
-                  <div className="introduction__tagline">
-                    {'The site will expand as my knowledge of React grows!'}
+        <div className="main-app-container parallax">
+          <div className="parallax__shortGroup">
+            <div className="parallax-layer parallax__layer--base">
+              <div>
+                <div className="introduction">
+                  <div className="introduction__content">
+                    <h2 className="introduction__name">
+                      {'Please come back later for more content. '}
+                    </h2>
+                    <div className="introduction__tagline">
+                      {'The site will expand as my knowledge of React grows!'}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="parallax-layer parallax__layer--back-1">
-            <Sun />
-          </div>
-          <div className="parallax-layer parallax__layer--back-2">
-            <Hills />
+            <div className="parallax-layer parallax__layer--back-1">
+              <Sun />
+            </div>
+            <div className="parallax-layer parallax__layer--back-2">
+              <Hills />
+            </div>
           </div>
         </div>
       </div>
