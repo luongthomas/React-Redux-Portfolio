@@ -12,9 +12,13 @@ export default class Project extends Component {
     const { project, projectLinks } = this.props;
     return (
       <div className="upper-container" style={{background: project.background_color}}>
-        <ListHeader text="I am a header." />
-        <ProjectListing title={project.title} name={project.name} description={project.description} />
-
+        <div className="inner-container">
+          <ListHeader text="Recent Projects" />
+          <ProjectListing title={project.title} />
+          <ProjectListing title={project.title} />
+          <ProjectListing title={project.title} />
+          <ProjectListing title={project.title} />
+        </div>
       </div>
     );
   }

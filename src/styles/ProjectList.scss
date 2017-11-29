@@ -1,4 +1,4 @@
-
+@import 'defaults';
 
 // This will place the element over the parallax elements
 // transform: translateZ(0);
@@ -6,23 +6,57 @@
 .upper-container {
   transform: translateZ(0);
   padding-top: 5em;
-  padding-bottom: 5em;
+  padding-bottom: 15em;
   text-align: center;
   width: 100vw;
   background-color: white;
-  // height: auto;
-  // padding: 100px 25px 100px 25px;
-  // margin-bottom: 4vh;
-  // font-size: 200%;
-  // @media #{$desktop} { 
-  //   display: flex;
-  //   align-items: center;
-  //   font-size: 150%;
-  //   line-height: 1.5;
 }
 
 
 .inner-container {
-  margin-left: 8%;
+  padding-left: 8%;
+  text-align: left;
+  color: black;
+  letter-spacing: 1px;
+  line-height: 1.75em;
+}
+
+
+
+.list-header {
+  font-size: 2.2em;
+  font-family: "MontserratAlternates-Bold", sans;
+  font-weight: 700;
+  padding-bottom: 4.5em;
+}
+
+.project-entry {
+  font-family: "MontserratAlternates-ExtraLight", sans;
+  font-size: 3.8em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  @media #{$phone-small} { 
+    
+    color: coral;
+  }
+}
+
+.project-entry:hover ~ .fancy-line {
+  background-color: coral;
 
 }
+
+hr.fancy-line {
+  font-weight: 600;
+  font-size: 2px;
+  color: coral;
+  max-width: 70%;
+  border: none;
+  height: 2px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+  
+}
+
+
