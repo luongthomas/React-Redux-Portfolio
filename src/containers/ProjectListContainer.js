@@ -1,7 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import ProjectList from '../components/ProjectList';
+//import ProjectList from '../components/ProjectList';
+import '../styles/ProjectList.scss';
+import ProjectListing from '../components/projectListComponents/ProjectListing'
+import ListHeader from '../components/projectListComponents/ListHeader'
 // import '../styles/parallax.scss';
 // import '../styles/main.scss';
 
@@ -15,14 +18,20 @@ export class App extends Component {
   render() {
     const { projects, projectLinks } = this.props;
     const projectEntries = projectLinks.map((project, index) => {
-      return <ProjectList key={index} project={project} />;
+      return <ProjectListing key={index} 
+                             title={project.title}
+                             description={project.description}
+                             date={project.date} />;
     });
 
+    
     return (
-          <div className="projects-container upper-container">
-            {/* notice that we then pass those unpacked props into the Counter component */}
-              {projectEntries}
-          </div>
+      <div className="upper-container" style={{background: "white"}}>
+        <div className="inner-container align-text-left">
+            <ListHeader text="Recent Projects" />
+            {projectEntries}
+        </div>
+      </div>
     );
   }
 }

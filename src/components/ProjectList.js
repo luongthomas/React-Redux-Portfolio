@@ -1,14 +1,27 @@
+// DEPRECATED BECAUSE WE ARE ACTUALLY RENDERING THIS DIRECTLY IN PROJECTLISTCONTAINER
+
+
+
 import React, { Component, PropTypes } from 'react';
 import '../styles/ProjectList.scss';
 import ProjectListing from './projectListComponents/ProjectListing'
 import ListHeader from './projectListComponents/ListHeader'
+
+
+
 
 export default class Project extends Component {
   constructor(props, context) {
     super(props, context);
   }
 
+
   render() {
+
+    const projectEntries = projects.map((project, index) => {
+      return <Project key={index} project={project} />;
+    });
+
     const { project, projectLinks } = this.props;
     return (
       <div className="upper-container" style={{background: project.background_color}}>
