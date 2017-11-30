@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'
+
 /**
  * Import the stylesheet you want used! Here we just reference
  * the main SCSS file we have in the styles directory.
@@ -21,6 +23,8 @@ const store = configureStore();
 
 // Choose our Redux store
 ReactDOM.render(
-  <Root store={store}/>,
-  document.getElementById('root')
+	<BrowserRouter>  
+		<Root store={store}/>,
+		document.getElementById('root')
+	</BrowserRouter>
 );

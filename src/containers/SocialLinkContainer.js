@@ -19,7 +19,8 @@ export class App extends Component {
       return <SocialListing key={index} 
                              title={socialLink.title}
                              description={socialLink.description}
-                             date={socialLink.date} />;
+                             date={socialLink.date}
+                             url={socialLinks.url} />;
     });
 
     

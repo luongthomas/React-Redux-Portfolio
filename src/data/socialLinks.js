@@ -1,21 +1,26 @@
 const socialLinks = {
   data: [
     {
-      title: "Link 1",
-      date: "May 2017",
+      title: "LinkedIn",
       name: "Thomas App",
-      description: "I am a project description.",
-      background_color: "white",
-      tech_stack: []
+      description: "Where professionals can connect and network.",
+      url: "https://www.linkedin.com/in/luongthomas"
     },
     {
-      title: "Link 2",
-      date: "September 2017",
-      name: "Thomas App",
-      description: "I am a project description.",
-      background_color: "white",
-      tech_stack: []
+      title: "Twitter",
+      description: "Tweets about tech and cryptocurrency related things from yours truely.",
+      url: "https://twitter.com/luongtOSU"
     },
+    {
+      title: "Resume",
+      description: "View my credentials and work experience here in PDF form.",
+      url: "https://a.pomf.cat/ornona.pdf"
+    },
+    {
+      title: "Github",
+      description: "Read through my code that I've worked on since the first time I typed 'Hello World'",
+      url: "https://github.com/luongthomas"
+    }
 
   ]
 };

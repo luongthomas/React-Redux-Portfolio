@@ -98,6 +98,9 @@ hr.fancy-line {
   padding-bottom: .1em;
   font-weight: 300;
   opacity: 0;
+  @media #{$phone-small} { 
+      opacity: 100;
+    } 
 }
 
 .project-entry:hover > * {
@@ -120,6 +123,15 @@ hr.fancy-line {
   background-color: #fc7982;
 }
 
+.links-no-decorate {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.links-no-decorate:hover {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
 
 
 .word-wrap {
