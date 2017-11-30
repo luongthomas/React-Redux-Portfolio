@@ -55,16 +55,27 @@ export class App extends Component {
             </div>
           </div>
 
-          <div className="upper-container" style={{background: "white"}}>
-            <div className="inner-container align-text-left">
-                <ListHeader text="Say Hello" />
-                Tell me about your favorite places to travel to, 
-                ask me questions about programming, cryptocurrencies, 
-                or Portland, or help me practice Japanese.  
-                I am all ears.
+          <div className="increase-font">
+            <div className="upper-container" style={{background: "white"}}>
+              <div className="inner-container align-text-left flex-container word-wrap">
+                  <ListHeader text="Say hello" />
+                  <div>
+                  Tell me about your favorite places to travel to, 
+                  ask me questions about programming, cryptocurrencies, 
+                  or Portland, or help me practice Japanese.  
+                  </div>
+                  
+                  <div className="one-line-space separate-bottom">
+                  I am all ears.
+                  </div>
+                  <div className="button">
+                    <a href = "mailto:luongt@me.com?subject = Feedback&body = Message"> 
+                      Email Me
+                    </a>
+                  </div>
+              </div>
             </div>
           </div>
-
 
         </div>
 
@@ -92,8 +103,9 @@ export class App extends Component {
             </div>
           </div>
         </div>
-
-        <Footer />
+        <div className="increase-font">
+          <Footer />
+        </div>
       </div>
     );
   }
