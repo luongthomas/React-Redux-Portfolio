@@ -12,6 +12,12 @@
 
 }
 
+// Todo move to other scss file
+.footer-container {
+  background-color: black;
+  transform: translateZ(0);
+}
+
 .align-text-left {
   // text-align: left;
 
@@ -32,7 +38,7 @@
   // padding-right: 8%;
   // max-width: 1%;
   
-  color: black;
+  color: #333447;
   letter-spacing: 1px;
   line-height: 1.75em;
 
@@ -57,7 +63,8 @@
 
 .project-entry {
   font-family: "MontserratAlternates-ExtraLight", sans;
-  font-size: 4.4em;
+  font-size: 3em;
+  font-weight: 200;
   padding-top: 0.35em;
   margin-bottom: 0.75em;
   // @media #{$phone-small} { 
@@ -82,8 +89,8 @@ hr.fancy-line {
 
 .project-date {
   font-family: "MontserratAlternates-ExtraLight", sans;
-  font-size: 0.3em;
-  padding-top: 2em;
+  font-size: 0.35em;
+  padding-top: 1.8em;
   padding-bottom: .1em;
   font-weight: 300;
   opacity: 0;
@@ -91,9 +98,9 @@ hr.fancy-line {
 
 .project-entry:hover > * {
   color: #fc7982;
-  @media #{$phone-small} { 
-    color: blue;
-  }
+  // @media #{$phone-small} { 
+  //   color: blue;
+  // }
 }
 
 .project-entry:hover > * .project-date {
@@ -104,7 +111,7 @@ hr.fancy-line {
       -webkit-transition: opacity .2s ease-in-out;
 }
 
-.project-entry:hover > hr.fancy-line {
+.project-entry:hover > * hr.fancy-line {
   //background-color: #333447;
   background-color: #fc7982;
 }
