@@ -5,9 +5,9 @@
 
 .upper-container {
   transform: translateZ(0);
-  padding-top: 5em;
-  padding-bottom: 15em;
-  width: 100vw;
+  padding-top: 15em;
+  padding-bottom: 5em;
+  // width: 100vw;
   background-color: white;
 
 }
@@ -24,7 +24,7 @@
 }
 
 .inner-container {
-  flex: 1 1 auto;     /* 1 */
+  // flex: 1 1 auto;     /* 1 */
   // position: relative;
   min-width: 1px;
   max-width: 400px;

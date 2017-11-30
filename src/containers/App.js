@@ -9,10 +9,13 @@ import Hills from '../components/Hills';
 import Sun from '../components/Sun';
 import ProjectsContainer from './ProjectsContainer';
 import ProjectListContainer from './ProjectListContainer';
+import SocialLinkContainer from './SocialLinkContainer';
 import { startTime } from '../index';
 import '../styles/parallax.scss';
 // import '../styles/main.scss';
 import '../styles/introduction.scss';
+import '../styles/responsiveCol.scss';
+
 /**
  * It is common practice to have a 'Root' container/component require our main App (this one).
  * Again, this is because it serves to wrap the rest of our application with the Provider
@@ -25,14 +28,8 @@ export class App extends Component {
   }
 
   render() {
-    const { projects, benchmark, personalInfo, projectLinks } = this.props;
+    const { projects, benchmark, personalInfo, projectLinks, socialLinks } = this.props;
 
-    // Creates a project space for each project in the projects array
-    const projectEntries = projects.map((project, index) => {
-      return <Project key={index} project={project} />;
-    });
-    // we can use ES6s object destructuring to effectively "unpack" our props
-        // <Header personalInfo={personalInfo} />
     return (
       <div className="main-app-container parallax">
         <div className="parallax-group">
@@ -46,12 +43,16 @@ export class App extends Component {
             <Hills />
           </div>
         </div>
-        <div>
-          <ProjectListContainer />
+
+        
+        <div className="flex-grid-halves">
+          <div className="col">
+            <ProjectListContainer />
+          </div>
+          <div className="col">
+            <SocialLinkContainer />
+          </div>
         </div>
-      {/*  <div className="">
-          <ProjectsContainer />
-        </div>*/}
 
         <div className="main-app-container footer-container">
           <div className="parallax__shortGroup">
@@ -89,7 +90,8 @@ App.propTypes = {
   actions: PropTypes.object.isRequired,
   benchmark: PropTypes.number.isRequired,
   personalInfo: PropTypes.object.isRequired,
-  projectLinks: PropTypes.array.isRequired
+  projectLinks: PropTypes.array.isRequired,
+  socialLinks: PropTypes.array.isRequired
 };
 
 /**
@@ -102,7 +104,8 @@ function mapStateToProps(state) {
     projects: state.projects,
     benchmark: state.benchmark,
     personalInfo: state.personalInfo,
-    projectLinks: state.projectLinks
+    projectLinks: state.projectLinks,
+    socialLinks: state.socialLinks
   };
 }
 
