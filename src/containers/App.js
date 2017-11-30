@@ -15,6 +15,7 @@ import '../styles/parallax.scss';
 // import '../styles/main.scss';
 import '../styles/introduction.scss';
 import '../styles/responsiveCol.scss';
+import ListHeader from '../components/projectListComponents/ListHeader'
 
 /**
  * It is common practice to have a 'Root' container/component require our main App (this one).
@@ -44,16 +45,32 @@ export class App extends Component {
           </div>
         </div>
 
-        
-        <div className="flex-grid-halves">
-          <div className="col">
-            <ProjectListContainer />
+        <div>
+          <div className="flex-grid-halves">
+            <div className="col">
+              <ProjectListContainer />
+            </div>
+            <div className="col">
+              <SocialLinkContainer />
+            </div>
           </div>
-          <div className="col">
-            <SocialLinkContainer />
+
+          <div className="upper-container" style={{background: "white"}}>
+            <div className="inner-container align-text-left">
+                <ListHeader text="Say Hello" />
+                Tell me about your favorite places to travel to, 
+                ask me questions about programming, cryptocurrencies, 
+                or Portland, or help me practice Japanese.  
+                I am all ears.
+            </div>
           </div>
+
+
         </div>
 
+
+
+      
         <div className="main-app-container footer-container">
           <div className="parallax__shortGroup">
             <div className="parallax-layer parallax__layer--base">
@@ -64,7 +81,7 @@ export class App extends Component {
                       {'Please come back later for more content. '}
                     </h2>
                     <div className="introduction__tagline">
-                      {'The site will expand as my knowledge of React grows!'}
+                      {'The site will expand as my knowledge of web programming grows!'}
                     </div>
                   </div>
                 </div>
