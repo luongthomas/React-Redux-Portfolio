@@ -48,16 +48,18 @@ export class App extends Component {
 
         <div>
           <Particles className="particleBg"
+              
+              
               params={{
                 particles: {
-                  type: "circle",
+                  type: "polygon",
                   shape: {
                     polygon: {
                       nb_sides: 5
                     }
                   },
                   number: {
-                    value: 60,
+                    value: 45,
                     density: {
                       enable: true,
                       value_area: 800
@@ -68,7 +70,7 @@ export class App extends Component {
                     color: "#000000"
                   },
                   size: {
-                    value: 4,
+                    value: 5,
                     random: true
                   },
                   line_linked: {
@@ -117,19 +119,22 @@ export class App extends Component {
                 backgroundPosition: "50% 50%",
                 backgroundRepeat: "no-repeat"
               }}
-            >Hello</Particles>
-            <div className="flex-grid-halves">
-              <div className="col">
-                <ProjectListContainer />
-              </div>
-              <div className="col">
-                <SocialLinkContainer />
+            ></Particles>
+
+
+            <div style={{background: "red"}} >
+              <div className="flex-grid-halves">
+                <div className="col">
+                  <ProjectListContainer />
+                </div>
+                <div className="col">
+                  <SocialLinkContainer />
+                </div>
               </div>
             </div>
-          
 
           <div className="increase-font">
-            <div className="upper-container" style={{background: "white"}}>
+            <div className="upper-container" style={{background: "red"}}>
               <div className="inner-container align-text-left flex-container word-wrap">
                   <ListHeader text="Say hello" />
                   <div>

@@ -1,7 +1,7 @@
 const projectLinks = {
   data: [
     {
-      title: "Project 1",
+      title: "Buddy - iOS App",
       date: "May 2017",
       name: "Thomas App",
       description: "I am a project description.",
@@ -9,24 +9,24 @@ const projectLinks = {
       tech_stack: []
     },
     {
-      title: "Project 2",
-      date: "September 2017",
-      name: "Thomas App",
-      description: "I am a project description.",
-      background_color: "white",
-      tech_stack: []
-    },
-    {
-      title: "Project 3",
-      date: "June 2017",
-      name: "Thomas App",
-      description: "I am a project description.",
-      background_color: "white",
-      tech_stack: []
-    },
-    {
-      title: "Project 4",
+      title: "iBleach - iOS App",
       date: "October 2017",
+      name: "Thomas App",
+      description: "I am a project description.",
+      background_color: "white",
+      tech_stack: []
+    },
+    {
+      title: "PokerHUD - iOS App",
+      date: "August 2017",
+      name: "Thomas App",
+      description: "I am a project description.",
+      background_color: "white",
+      tech_stack: []
+    },
+    {
+      title: "Mars Shooter - Unity Game",
+      date: "July 2017",
       name: "Thomas App",
       description: "I am a project description.",
       background_color: "white",

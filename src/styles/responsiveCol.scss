@@ -23,12 +23,12 @@
 }
 
 .flex-grid-halves {
-	transform: translateZ(0);
-	background-color: white;
+	
 	display: flex;
 	justify-content: space-between;
+	// color: blue;
 	@media #{$phone-small} {	
-		background-color: red;
+		// background-color: red;
 		display: block;
 		width: 100%;
 		.col {
