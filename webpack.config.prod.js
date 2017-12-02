@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const bourbon = require('node-bourbon').includePaths;
 const autoprefixer = require('autoprefixer');
 
+
 module.exports = {
   devtool: 'source-map',
   entry: [
@@ -14,6 +15,7 @@ module.exports = {
     publicPath: '/static/'
   },
   plugins: [
+    
     /**
      * This plugin assigns the module and chunk ids by occurence count. What this
      * means is that frequently used IDs will get lower/shorter IDs - so they become

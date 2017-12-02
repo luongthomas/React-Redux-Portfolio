@@ -15,7 +15,8 @@ import '../styles/parallax.scss';
 // import '../styles/main.scss';
 import '../styles/introduction.scss';
 import '../styles/responsiveCol.scss';
-import ListHeader from '../components/projectListComponents/ListHeader'
+import ListHeader from '../components/projectListComponents/ListHeader';
+import Particles from 'react-particles-js';
 
 /**
  * It is common practice to have a 'Root' container/component require our main App (this one).
@@ -46,14 +47,62 @@ export class App extends Component {
         </div>
 
         <div>
-          <div className="flex-grid-halves">
-            <div className="col">
-              <ProjectListContainer />
+          <Particles className="particleBg"
+              params={{
+                particles: {
+                  type: "circle",
+                  number: {
+                    value: 10,
+                    density: {
+                      enable: true,
+                      value_area: 800
+                    } 
+                  },
+                  stroke: {
+                    width: 1,
+                    color: "#000000"
+                  },
+                  size: {
+                    value: 3,
+                    random: true
+                  },
+                  line_linked: {
+                    enable: false
+                  }
+                },
+                interactivity: {
+                  detect_on: "canvas",
+                  events: {
+                    onhover: {
+                      enable: true,
+                      mode: "grab"
+                    },
+                    onclick: {
+                      enable: true,
+                      mode: "push"
+                    },
+                    resize: true
+                  },
+                }
+              }}
+              style={{
+                width: '100%',
+                backgroundColor: "black",
+                backgroundImage: 'url(http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1237px-NASA_logo.svg.png)',
+                backgroundSize: "20%",
+                backgroundPosition: "50% 50%",
+                backgroundRepeat: "no-repeat"
+              }}
+            >Hello</Particles>
+            <div className="flex-grid-halves">
+              <div className="col">
+                <ProjectListContainer />
+              </div>
+              <div className="col">
+                <SocialLinkContainer />
+              </div>
             </div>
-            <div className="col">
-              <SocialLinkContainer />
-            </div>
-          </div>
+          
 
           <div className="increase-font">
             <div className="upper-container" style={{background: "white"}}>
@@ -116,7 +165,7 @@ export class App extends Component {
 
 App.propTypes = {
   projects: PropTypes.array.isRequired,
-  actions: PropTypes.object.isRequired,
+  
   benchmark: PropTypes.number.isRequired,
   personalInfo: PropTypes.object.isRequired,
   projectLinks: PropTypes.array.isRequired,
