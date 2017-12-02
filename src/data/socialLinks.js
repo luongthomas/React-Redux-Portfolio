@@ -2,7 +2,6 @@ const socialLinks = {
   data: [
     {
       title: "LinkedIn",
-      name: "Thomas App",
       description: "Where professionals can connect and network.",
       url: "https://www.linkedin.com/in/luongthomas"
     },

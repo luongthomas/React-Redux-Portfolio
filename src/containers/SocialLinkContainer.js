@@ -20,7 +20,7 @@ export class App extends Component {
                              title={socialLink.title}
                              description={socialLink.description}
                              date={socialLink.date}
-                             url={socialLinks.url} />;
+                             url={socialLink.url} />;
     });
 
     

@@ -7,7 +7,7 @@ export default class SocialListing extends Component {
     return (
       <div className="project-entry">
         <div>
-          <a href={"{url}"} className="links-no-decorate">
+          <a href={`${url}`} className="links-no-decorate">
             <div>
               {title}
             </div>
