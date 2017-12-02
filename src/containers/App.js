@@ -51,8 +51,13 @@ export class App extends Component {
               params={{
                 particles: {
                   type: "circle",
+                  shape: {
+                    polygon: {
+                      nb_sides: 5
+                    }
+                  },
                   number: {
-                    value: 10,
+                    value: 60,
                     density: {
                       enable: true,
                       value_area: 800
@@ -63,7 +68,7 @@ export class App extends Component {
                     color: "#000000"
                   },
                   size: {
-                    value: 3,
+                    value: 4,
                     random: true
                   },
                   line_linked: {
@@ -75,7 +80,7 @@ export class App extends Component {
                   events: {
                     onhover: {
                       enable: true,
-                      mode: "grab"
+                      mode: "bubble"
                     },
                     onclick: {
                       enable: true,
@@ -83,6 +88,25 @@ export class App extends Component {
                     },
                     resize: true
                   },
+                  modes: {
+                    bubble: {
+                      distance: 250,
+                      size: 0,
+                      duration: 2,
+                      opacity: 0
+                      
+                    },
+                    repulse: {
+                      distance: 400,
+                      duration: 0.4
+                    },
+                    push: {
+                      particles_nb: 4
+                    },
+                    remove: {
+                      particles_nb: 2
+                    }
+                  }
                 }
               }}
               style={{
